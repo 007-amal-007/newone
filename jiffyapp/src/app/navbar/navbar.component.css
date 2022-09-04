@@ -1,0 +1,17 @@
+.navbar-light .navbar-nav{
+    margin-right: 12rem;
+}
+.navbar-light .navbar-nav .nav-item {
+    padding: 0.5rem;
+}
+.navbar-light .navbar-nav .nav-item .nav-link {
+    font-size: .8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.navbar{
+    background: transparent;
+}
+.navbar-inverse{
+    background-color: #118f50;
+}

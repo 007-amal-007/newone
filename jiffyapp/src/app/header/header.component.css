@@ -1,0 +1,120 @@
+/*Calendar*/
+.location,
+.from-selector,
+.to-selector,
+.calendar-btn,
+.date-txt,
+.date_icn,
+.pickup-txt {
+    display: inline-block;
+}
+
+.calendar-btn {
+    position: relative;
+    float: left;
+}
+
+
+.pickup-txt,
+.date-txt {
+    width: auto;
+}
+
+.date_icn {
+    width: 30px;
+    float: right;
+    margin-left: 15px;
+}
+.date_icn .bi-calendar3{
+    font-size: 1.5rem;
+}
+.date_icn .bi-geo-alt{
+    font-size: 1.5rem;
+}
+
+.date-selector-wrap {
+    background: #fff;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.14);
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.14);
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-align: left;
+    margin-left: 4%;
+    float: left;
+    z-index: 9999999;
+}
+
+.txt-grey1 {
+    color: #626262;
+    font-size: 14px;
+    width: 100%;
+    display: block;
+    text-align: left;
+}
+
+.txt-blak1 {
+    color: #000;
+    font-size: 16px;
+    width: 100%;
+    display: block;
+    text-align: left;
+    font-weight: 500;
+    line-height: 12px;
+	border: none;
+    outline:none;
+}
+
+.border-right {
+    border-right: 1px solid #e4e4e4;
+}
+
+.location {
+    padding: 15px 10px 10px 15px;
+    cursor: pointer;
+}
+.location1{
+    padding: 15px 10px 10px 15px;
+    cursor: pointer;
+}
+.location2{
+    padding: 15px 10px 10px 15px;
+    cursor: pointer;
+}
+
+.calendar-btn a {
+    text-decoration: none;
+    text-align: center;
+    background: #118f50;
+    padding: 14px 7px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+    display: inline-block;
+    position: absolute;
+    top: 6px;
+    width: 140px;
+    left: -1px;
+    z-index: 9;
+    font-weight: 500;
+    box-shadow: 0px 5px 20px 0px rgba(17, 143, 80, 0.4);
+    -webkit-box-shadow: 0px 5px 20px 0px rgba(17, 143, 80, 0.4);
+    -moz-box-shadow: 0px 5px 20px 0px rgba(17, 143, 80, 0.4);
+}
+
+.calendar-btn a:hover {
+    text-decoration: none;
+    background: #077a41;
+}
+
+
+/*Calendar ends*/
+@media (max-width: 576px){
+    .date-selector-wrap {
+        flex-direction: column;
+    }
+}
