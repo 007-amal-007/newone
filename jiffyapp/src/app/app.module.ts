@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-
 import { AppRoutingModule } from './app-routing.module';
+
+//components
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
@@ -12,9 +12,8 @@ import { HomeComponent } from './home/home.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 //material modules
-import {MatDatepickerModule} from '@angular/material/datepicker'; 
-import {MatNativeDateModule} from '@angular/material/core';
 import {HttpClientModule} from '@angular/common/http';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +22,7 @@ import {HttpClientModule} from '@angular/common/http';
     HeaderComponent,
     LoginComponent,
     HomeComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,7 +31,6 @@ import {HttpClientModule} from '@angular/common/http';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-  
   ],
   providers: [],
   bootstrap: [AppComponent]
