@@ -1,12 +1,9 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "cli": {
-    "analytics": "b3f14a7a-014b-4fab-82fd-e64bebb8457f"
-  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "jiffyapp": {
+    "test-jiffy": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -20,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/jiffyapp",
+            "outputPath": "dist/test-jiffy",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -30,7 +27,6 @@
               "src/assets"
             ],
             "styles": [
-              "src/custom-theme.scss",
               "src/styles.css"
             ],
             "scripts": []
@@ -72,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "jiffyapp:build:production"
+              "browserTarget": "test-jiffy:build:production"
             },
             "development": {
-              "browserTarget": "jiffyapp:build:development"
+              "browserTarget": "test-jiffy:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +79,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "jiffyapp:build"
+            "browserTarget": "test-jiffy:build"
           }
         },
         "test": {
@@ -106,5 +102,5 @@
       }
     }
   },
-  "defaultProject": "jiffyapp"
+  "defaultProject": "test-jiffy"
 }
